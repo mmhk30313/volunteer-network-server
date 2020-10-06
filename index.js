@@ -35,6 +35,7 @@ client.connect(err => {
     app.get('/network', (req, res) => {
         networkCollection.find({})
         .toArray( (err, documents) => {
+            console.log(documents)
             res.send(documents);
         })
     })
