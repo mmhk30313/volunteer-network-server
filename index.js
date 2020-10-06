@@ -12,7 +12,7 @@ app.use(cors());
 const port = 3001
 
 app.get('/', (req, res) => {
-  res.send('Hello Volunteer Network World!')
+  res.send('Hello Volunteer Network World! For Heroku')
 })
 
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
